@@ -1,0 +1,291 @@
+\documentclass[12pt]{article}
+
+\addtolength{\textwidth}{1.4in}
+\addtolength{\oddsidemargin}{-.7in} %left margin
+\addtolength{\evensidemargin}{-.7in}
+\setlength{\textheight}{8.5in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\headheight}{0.0in}
+\setlength{\footskip}{.5in}
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parindent}{0pt}
+\linespread{1.1}
+
+\usepackage{amssymb, amsmath, amsthm, bm}
+\usepackage{graphicx,csquotes,verbatim}
+\usepackage[backend=biber,block=space,style=authoryear]{biblatex}
+\setlength{\bibitemsep}{\baselineskip}
+\usepackage[american]{babel}
+%dell laptop
+\addbibresource{C:/Users/Kristy/Dropbox/Research/xBibs/tradeagreements.bib}
+%\addbibresource{C:/Users/Kristy/Documents/Dropbox/Research/xBibs/tradeagreements.bib}
+\renewcommand{\newunitpunct}{,}
+\renewbibmacro{in:}{}
+
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\usepackage{xcolor}
+\hbadness=10000
+
+\newcommand{\ve}{\varepsilon}
+\newcommand{\ov}{\overline}
+\newcommand{\un}{\underline}
+\newcommand{\ta}{\theta}
+\newcommand{\al}{\alpha}
+\newcommand{\Ta}{\Theta}
+\newcommand{\expect}{\mathbb{E}}
+\newcommand{\Bt}{B(\bm{\tau^a})}
+\newcommand{\bta}{\bm{\tau^a}}
+\newcommand{\btn}{\bm{\tau^n}}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\de}{\delta}
+
+\begin{document}
+\begin{center}
+Ex-ante Lobbying
+\end{center}
+%\chead{Klimenko, Ramey and Watson (2007) summary.tex}
+
+\vskip.2in
+Ex-ante lobbying is lobbying before the trade agreement is signed to affect the level at which TA / applied tariff will be set
+\begin{itemize}
+	\item ex-post lobbying is lobbying after the TA is signed to change the applied tariff
+	\item lobby has to pay both times
+\end{itemize}
+
+\vskip.2in
+This set up says that governments set TA so that TA will be at optimal level at the time you're going to have to implement it
+\begin{itemize}
+	\item Ex-ante lobbying distorts you away from that being the optimal level for the government
+	\item Instead makes it jointly optimal for the government and lobby (in MRC framework)
+	\item Government's preferences are changed
+	\item What welfare does each party get at TA stage?
+		\begin{itemize}
+			\item Government might get/lose political capital from different interested parties; otherwise, it's all forward looking---what will future gains and losses be
+			\item Lobby just knows that this will bind its future action
+		\end{itemize}
+\end{itemize}
+
+\vskip.5in
+Adding ex-ante lobbying in case of endogenous lobbying ONLY
+\begin{itemize}
+	\item Without ex-ante lobbying, government chooses $\tau^A$ that leads to ex-post $e$ that maximizes ex-ante joint welfare
+		\[
+		  W(\ga(e),\tau^A) + W^*(\ga^*(e),\tau^A)
+		\]
+		knowing they'll set $\tau^N$ in the third stage (i.e. $\tau^N(\ga(e)) = \frac{8\ga(e) - 5}{68 - 8 \ga(e)} = \tau^R_{W,e}$).
+		\begin{itemize}
+			\item Set $\tau^A$ that will lead lobby to choose $e^A \Rightarrow \ga(e^A) \Rightarrow \tau^A$. That is, $\tau^A$ is the optimal unilateral choice of the home government when the lobby is faced with the constraint of the trade agreement.
+			\item Lobby would max $\pi(\tau(\ga(e))) -e$; instead sets $e = e_{W,e} \Rightarrow \tau^R_{W,e}$ (i.e. $\tau^N(\ga(e_{W,e})) =\tau_{W,e}$)
+		\end{itemize}
+	\item Given this relationship, pick $\tau^A$ that maximizes joint welfare: call it $\tau^R_{W,e}$.
+		\begin{itemize}
+			\item i.e. set $\tau^{TA}$ optimally given what you expect will happen in the future: but commitment device allows you to control what happens in the future
+		\end{itemize}
+	\item Another way to say it: there's a welfare level for every $\ga$. Make the optimal $\ga$ happen / pick the $\ga$ you'd like to have
+		\begin{itemize}
+			\item You'll actually end up with a lower $e$ mapping into a lower $\ga$ to produce the associated $\tau$ according to $\tau^N$
+		\end{itemize}
+	\item With ex-post lobbying only, at ex-ante stage gov't has to take into account how ex-post lobbying will affect it; picks $\tau^{TA}$ to max joint political welfare subject to this constraint
+\end{itemize}
+
+\vskip.2in
+Now, add in the ex-ante lobbying \`{a} la MRC.
+\begin{itemize}
+	\item Maximize joint welfare of both governments and both lobbies (but can concentrate on just one tariff because of separability)
+		\[
+		  max_{\tau,e} W(\ga(e),\tau) + W^*(\tau) + \pi(\tau) + \pi^*(\tau^*) - e - e^*
+		\]
+		\[
+		  max_{\tau,e} CS_x(\tau) + (2+\ga(e)) \pi_x(\tau) + TR(\tau) + CS_x^*(\tau) + \pi_x^*(\tau) - e
+		\]
+		FOCs: 
+		\begin{itemize}
+			\item For $\tau$, same as in no ex-ante lobbying case, except now $2 + \ga(e)$ weight on profits.
+			\item For $e$: $\frac{\partial \ga}{\partial e} \pi(\tau) = 1$
+				\begin{itemize}
+					\item In ex-post lobbying, $e$ will be determined by $\frac{\partial \pi}{\partial \tau}\frac{\partial \tau}{\partial \ga}\frac{\partial \ga}{\partial e} = 1$
+					\item Do I need second term in ex-ante version?
+				\end{itemize}
+		\end{itemize}
+	\item In MRC, there are essentially two $\ga$'s: one for ex-ante, one for ex-post
+		\begin{itemize}
+			\item But that doesn't match up with BS2005 framework, where the point of the TA is to take account of future $\ga$
+			\item Also leads to bizarre outcome where government will take into account lobby's profits even if $e^{\text{EA}}=0$.
+			\item They can max joint welfare because they have transferrable utility
+			\item Something gets lost in MRC formulation about division of rents as a result of transferrable utility and this joint welfare max: they have tariff caps and strong bindings equivalent, even though these split the surplus in very different ways. There's no way to take account of this at the ex-ante stage.
+		\end{itemize}
+	\item To take ex-ante out of MRC, just take $x \cdot p$ out of maximand at ex-ante stage (they do it on page 1391)
+		\begin{itemize}
+			\item They don't treat case of immobile capital in 1998 paper, so can't compare there. But they show that there would be free trade in their model with no ex-ante bargaining (because of bargaining power assumption--lobbies have it all)
+			\item I'm still not crystal clear on what purpose ex-ante lobbying serves in a world of fixed capital where gov't political welfare increases everywhere in $\ga$---here, gov't gives lobby whatever it wants ex-post
+				\begin{itemize}
+					\item Could $e^{EA}$ increase $\tau^{TA}$ in this world?
+					\item Since TA internalized TOT externality, I think it's possible that ex-ante lobbying undoes some of that--not directly, but raises tariff above the level that is applied when TOT completely internalized. I'm not convinced though.
+				\end{itemize}
+		\end{itemize}
+	\item Bargaining power
+		\begin{itemize}
+			\item It's important in MRC's story: they show how results change if they change bargaining power, and it's dramatic b/c they take an extreme view that lobbies have all the power
+			\item I view bargaining power in this environment as an artificial construct---what's going on isn't really bargaining; bargaining is used as a reduced form. But it's a much more complex process
+				\begin{itemize}
+					\item But bargaining power can be approximated by who gets what share of the rents
+					\item What are the ``rents''?
+						\begin{itemize}
+							\item How does ``surplus'' change from situation with no lobbying?
+							\item In my model, with $e=0$, gov't maximizes social welfare
+							\item If $W$ is unweighted and no trade agreement, then there is definitely surplus from lobbying:
+									\[
+									  W(\ga(e),\tau) + \pi(\tau) > W(\ga(0),\tau = optimal tariff ), \pi(optimal tariff)
+									\]
+							\item Same with TA with lobbying ex-post: gov't won't choose $\tau>0$ unless it improves political welfare.
+							\item It's not clear in ex-ante case; I'd have to do more work. It's not clear whether it's possible for gov't welfare to be strictly reduced by ex-ante lobbying (this should be relative to no lobbying? no trade agreement? Could lobbying incentives be such that lobby puts forth so much effort that when $W$ is concave in $\ga$, gov't falls below original level at $\tau = 0$? or $\tau = $ optimal unilateral tariff (depending on counterfactual)
+							\item But in first two, there is some intermediate split of surplus
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+
+\newpage
+December 15, 2014
+\begin{itemize}
+	\item (Dec 18) I'm now thinking of ex-ante-lobbying changing $e^{EP}$ to $\max \left\{e^{EA}, e^{EP}\right\}$
+	\item BS2005 appraoch is that TA is meant to optimally anticipate future pressure
+	\item BUT when it is entirely endogenous, can use trade-agreement-as-commitment device to control what $e^{EP}$ will be
+		\begin{itemize}
+			\item i.e. $e^{EP}$ is a function of $\tau^{TA}$
+			\item Government DOESN'T have to be controlled by backward inducting, seeing whatever lobby will choose as optimal for itself
+			\item So government can choose $\tau^{TA^*}$ that optimizes $\expect \left[W(\ga) + W^* \right]$
+			\item TA is used to arrange for the gov'ts' joint optimal ex-post level of $\ga$
+			\item $\tau^{TA^*} = \frac{4\left(\ga(e)-1\right)}{25-4\ga(e)}$
+		\end{itemize}
+	\item Government loses some measure of control when there is ex-ante lobbying.
+		\begin{itemize}
+			\item If $e^{EA} < e^{EP}$, ex-ante lobbying has no impact
+			\item If $e^{EA} > e^{EP}$, $\tau^{TA} >\tau^{TA^*}$
+			\item Govts lose some measure of control: if $e^{EA} = \max \left\{e^{EA}, e^{EP}\right\}$, then it determines $\tau^{TA}$
+				\begin{itemize}
+					\item Gov't still chooses ``optimal'' TA, but it's constrained optimal. Constrained by current pressure.
+				\end{itemize}
+		\end{itemize}
+	\item BUT ex-ante lobbying is more expensive: have to do it twice to get more protection than in ex-post only case
+		\begin{itemize}
+			\item This will be too expensive for some, so they won't lobby ex-ante
+			\item This is part of what trade agreements do: relative to no agreement at all, raises price of protection. If only ex-post lobbying is rational, government gets control
+		\end{itemize}
+	\item Have to figure out what correct comparisons are:
+		\begin{enumerate}
+			\item TA relative to no TA?
+				\begin{itemize}
+					\item If gov't wants more pressure, it should avoid TA. But then loses TOT internalization
+					\item If gov't wants less pressure, TA doubly good
+						\begin{itemize}
+							\item Presumes gov't is free to choose which sectors are part of TA, but this is part of a more complicated game; should be able to get payments to leave them out, then payments for unconstrained protection. But GATT rules...
+						\end{itemize}
+				\end{itemize}
+			\item TA with ex-ante relative to TA with ex-post only?
+			\item Cross industry? It's possible that $W$ has same shape in $\ga$ for all industries ($i$), but that the shape of $\ga$ differs by $i$
+				\begin{itemize}
+					\item Remember what $\ga$ is: reduced form for how political pressure translates into weight put on profits in policy-making process
+				\end{itemize}
+		\end{enumerate}
+\end{itemize}
+
+\vskip1in
+Real question: why does the government set non-zero $\tau^{TA}$?
+\begin{itemize}
+	\item Because $\ga(e^{TA})$ together with $\tau^{TA}$ provides higher welfare than $\ga(0)$ together with $\tau=0$
+	\item With ex-ante lobbying, $e^{EP}$ will still equal $e^{TA}$
+		\begin{itemize}
+			\item Instead of purely looking ahead and getting to manipulate, gov't welfare fcn gets highjacked
+			\item I think I need to show several interesting possibilities and leave it at that. What are they?
+		\end{itemize}
+\end{itemize}
+
+\vskip1in
+Lobby faces different incentives ex-ante and ex-post
+\begin{itemize}
+	\item Ex-post, pays according to $\tau^N$
+	\item Ex-ante, pays according to $\tau^E$
+\end{itemize}
+Therefore it's possible to have $e^{EP} < e^{L}$ even with $e^{EA}>0$
+\begin{itemize}
+	\item I believe a necessary condition is that government welfare is concave in $\ga(e)$ and $\ga^* < \ga^L$
+	\item Investigate: It seems as if it must be the case that $\tau^{EA} < \tau^{EP}$. Should be easy to show.
+		\begin{itemize}
+			\item If this is true, even though ex-ante lobbying takes something away, as long as government \textit{wants} to restrain lobbying, trade agreement will even with ex-ante (relative to trade war level)
+			\item Need to be up front about which assumptions (especially on $\ga$) this requires
+		\end{itemize}
+\end{itemize}
+
+\newpage
+Exact tariff commitment result
+\begin{itemize}
+	\item We know $e^{EP} =0$ and $\tau^{EP} = \tau^{TA}$ when no possibility of ex-ante lobbying
+	\item What does lobby's problem look like?
+		\begin{itemize}
+			\item At ex-post stage, $e^{EA}$ sunk. So ex-post problem looks the same.
+			\item In principle, at ex-ante stage, $e^{EA}$ will have impact on $e^{EP}$. But not in exact tariff case: $e^{EP} = 0 \ \forall e^{EP}$.
+			\item So this collapses to a simple problem of maximizing joint gov't welfare with only $e=e^{EA}$
+				\begin{itemize}
+					\item Looks like a problem with no ex-post lobbying, but where there is perfect enforcement of the tariff commitment
+					\item Essentially, there is no future for the government to control
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+\vskip.2in
+Tariff cap result
+\begin{itemize}
+	\item Here, $e^{EP}$ will also work as in body of paper. The earlier stage is sunk, and applied level will match whatever effort lobby puts forth
+		\begin{itemize}
+			\item It's just that cap could be higher due to ex-ante lobbying
+		\end{itemize}
+	\item Since $e$ at ex-ante stage is $\max\left\{e^{EA},e^{EP}\right\}$, government sets cap for anticipated $e^{EP}$ or for $e^{EA}$, whichever is higher.
+	\item Lobby has to decide optimal $e^{EA}$
+		\begin{itemize}
+			\item Use calculus condition
+				\[
+				  \pi(\tau^E(e^{EA})) - e^{EA} - e^{EP}(e^{EA})
+				\]
+				When this FOC is operative, government decides tariff cap according to joint decision problem with $e^{EA}$, but then lobby still has to exert effort up to that cap; $e^{EP}$ is the amount the lobby pays according to $\tau^N$ to achieve $\tau^E(e^{EA})$
+					\begin{itemize}
+						\item FOC
+							\[
+							  \frac{\partial \pi}{\partial \tau} \frac{\partial \tau}{\partial \ga} \frac{\partial \ga}{\partial e^{EA}} = 1 +\frac{\partial e^{EP}}{\partial e^{EA}}
+							\]
+					\end{itemize}
+			\item Then, set to zero if either $e^{EA} < e^{EP}$ or
+			  \[
+				  \pi(\tau(e^{EA})) - e^{EA} - e^{EP} < \pi(\tau(e^{EP})) - e^{EP} 
+				\]
+				where $\tau$ is set according to $\tau^E$ (have to be super careful about how to define these $e$'s).
+			\item Intuition: If lobby's incentives to exert pressure ex-ante are strong enough, they overpower the government's ability to use the TA to directly manipulate lobbying incentives ex-post
+				\begin{itemize}
+					\item Lobby can force government to set cap higher than the level that would optimize its welfare when there is no ex-ante lobbying
+					\item BUT the TA itself mutes ex-ante lobbying incentives (through a couple channels, I think)
+				\end{itemize}
+			\item If government would set $\tau^{TA}$ such that lobby can achieve $e^L$ (that is, this level is optimal for gov't), then there is no incentive to lobby ex-ante
+				\begin{itemize}
+					\item If gov't sets $\tau^{TA}$ lower than this level, I think it's true that lobby will NOT get $e^L$ due to differing incentives ex-ante (lobbying more expensive.
+					\item Could be higher, but not all the way to level that would achieve $e^L$? Or could optimal ex-ante lead to this because ex-post lobbying can achieve more for less?
+				\end{itemize}
+	   
+		\end{itemize}
+	 \item It's possible that $e^{EP} < e^{L}$ with $e^{EA} > 0$
+		\begin{itemize}
+			\item Not sure if $W$ concave in $\ga$ is necessary, but it seems like it
+			\item $W$ concave in $\ga$ implies $W$ increases as $\pi_x$ is weighted more heavily (as in standard $W$), but eventually $W$ decreases in $\ga$
+				\begin{itemize}
+					\item Giving them more weight doesn't give gov't proportionally higher welfare
+					\item Something like Bill Ethier's 2012 GJE (Political Economy Approach) paper where there are diminishing returns to lobbying as $\tau$ increases
+					\item I can interpret this as $\ga$ being a concave function of $\tau$, but not sure that gets me what I need
+					\item diminishing returns to lobbying in $\tau$ for lobbyists vs. diminishing returns to awarding higher $\tau$ for gov't
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+\end{document}
