@@ -168,36 +168,6 @@ Tariff cap result
 %\vskip.5in
 \newpage
 \begin{itemize}					
-	\item BUT the TA mutes lobbying incentives, even if there is ex-ante lobbying (through a couple channels, I think)
-		\begin{itemize}
-			\item ex-ante lobbying is more expensive: have to do it twice to get more protection than in ex-post only case
-
-									\item This will be too expensive for some, so they won't lobby ex-ante (see Condition~\ref{ine:ea})
-									\item This is part of what trade agreements do: relative to no agreement at all, raises price of protection. If only ex-post lobbying is rational, government gets control
-
-		\end{itemize}
-				
-			\item If government would set $\tau^R_{W,e}$ such that lobby can achieve $e^L$ (that is, this level is optimal for lobby), then there is no incentive to lobby ex-ante
-				\begin{itemize}
-					\item If gov't sets $\tau^R_{W,e}$ lower than this level, lobby cannot get $e^L$ due to differing incentives ex-ante 
-						\begin{itemize}
-							\item Ex-post, pays according to $\tau^N$
-							\item Ex-ante, pays according to $\tau^E$
-						\end{itemize}
-					\item Could be higher, but not all the way to level that would achieve $e^L$ (shown below)
-				\end{itemize}
-		
-	 \item It's possible that $e^{EP} < e^{L}$ with $e^{EA} > 0$
-		\begin{itemize}
-			\item Not sure if $W$ concave in $\ga$ (and $\ga^* < \ga^L$) is necessary, but it seems like it
-			\item $W$ concave in $\ga$ implies $W$ increases as $\pi_x$ is weighted more heavily (as in standard $W$), but eventually $W$ decreases in $\ga$
-				\begin{itemize}
-					\item Giving them more weight doesn't give gov't proportionally higher welfare
-					\item Something like Bill Ethier's 2012 GJE (Political Economy Approach) paper where there are diminishing returns to lobbying as $\tau$ increases
-					\item I can interpret this as $\ga$ being a concave function of $\tau$, but not sure that gets me what I need
-					\item diminishing returns to lobbying in $\tau$ for lobbyists vs. diminishing returns to awarding higher $\tau$ for gov't
-				\end{itemize}
-		\end{itemize}
 	\item $\tau^{EA} < \tau^N(e^N)$
 		\begin{itemize}
 			\item Lemma to show ex-post lobbying leads to lower tariff than no agreement
@@ -219,10 +189,18 @@ Tariff cap result
 					\end{equation}
 				Because $\frac{\frac{\partial \tau^N}{\partial \ga}}{\frac{\partial \tau^E}{\partial \ga}} > 0$, the solution to the ex-ante first order condition as given in Equation~(\ref{eq:ea2}) is smaller than the solution to Equation~(\ref{eq:nta}), so that the lobby exerts less effort in the ex-ante stage of trade agreement negotiations than when there is no trade agreement. Since $\tau^E(\cdot) < \tau^N(\cdot)$ for all $e$, $\tau^{EA} < \tau^N(e^N)$. \\
 			(Important to give intuition since increased incentive to exert lobbying effort...)
+				\item If government would set $\tau^R_{W,e}$ such that lobby can achieve $e^L$ (that is, this level is optimal for lobby), then there is no incentive to lobby ex-ante
+		\begin{itemize}
+			\item If gov't sets $\tau^R_{W,e} < e^L$, lobby cannot get $e^L$ due to differing incentives ex-ante 
+						\begin{itemize}
+							\item Ex-post, pays according to $\tau^N$, ex-ante, pays according to $\tau^E$
+						\end{itemize}
+					\item Could be higher, but not all the way to level that would achieve $e^L$
+				\end{itemize}
 			\item Result: then tariffs are always lower with a trade agreement.
 			Proof: It is shown above that tariffs under ex-ante lobbying are set either in line with lobbying effort according to the first order condition (\ref{eq:ea}) or via ex-post incentives. 
 				\begin{itemize}
-					\item Need to be up front about which assumptions (especially on $\ga$) this requires
+					\item Assume throughout that $\frac{\partial \ga}{\partial e} > 0$
 				\end{itemize}
 			\item Even though ex-ante lobbying takes something away, as long as government \textit{wants} to restrain lobbying, trade agreement will do this even with ex-ante lobbying (relative to trade war level)
 				\begin{itemize}
@@ -235,6 +213,25 @@ Tariff cap result
 							\item This would inform who gets included / left out of trade agreements
 						\end{itemize}
 					\end{itemize}
+		\end{itemize}
+	\item TA mutes lobbying incentives, even if there is ex-ante lobbying
+		\begin{itemize}
+			\item ex-ante lobbying is more expensive: both on the margin, and because you have to pay twice in order to get more protection than in ex-post only case
+			\item This will be too expensive for some, so they won't lobby ex-ante (see Condition~\ref{ine:ea})
+			\item This is part of what trade agreements do: relative to no agreement at all, raises price of protection. If only ex-post lobbying is rational, government gets control
+		\end{itemize}
+
+		
+	 \item It's possible that $e^{EP} < e^{L}$ with $e^{EA} > 0$
+		\begin{itemize}
+			\item For instance, take $W$ concave in $\ga$ (and $\ga^* < \ga^L$)
+			\item This implies $W$ increases as $\pi_x$ is weighted more heavily (as in standard $W$), but eventually $W$ decreases in $\ga$
+				\begin{itemize}
+					\item Giving them more weight doesn't give gov't proportionally higher welfare
+					\item Something like Bill Ethier's 2012 GJE (Political Economy Approach) paper where there are diminishing returns to lobbying as $\tau$ increases
+					\item I can interpret this as $\ga$ being a decreasing function of $\tau$
+					%\item diminishing returns to lobbying in $\tau$ for lobbyists vs. diminishing returns to awarding higher $\tau$ for gov't
+				\end{itemize}
 		\end{itemize}
 \end{itemize}
 
@@ -261,6 +258,22 @@ Now, add in the ex-ante lobbying \`{a} la MRC.
 					\item Could $e^{EA}$ increase $\tau^{TA}$ in this world?
 					\item Since TA internalized TOT externality, I think it's possible that ex-ante lobbying undoes some of that--not directly, but raises tariff above the level that is applied when TOT completely internalized. I'm not convinced though.
 				\end{itemize}
+		\end{itemize}
+	\item In MRC, no matter how tariff is set (cooperatively or non-cooperatively), contribution is $xp(\ov{t})$
+		\begin{itemize}
+			\item Not true in GH95
+			\item In my set-up, lobby's incentives change when tariff-setting process changes
+			\item In the part that is only in the NBER working paper, they have
+				\begin{itemize}
+					\item $z=0$ (perfectly immobile capital)
+					\item no ex-ante lobbying
+					\item government has all the bargaining power
+					\item government sometimes chooses free trade---so there IS an incentive to use the TA as a domestic commitment device
+				\end{itemize}
+		\end{itemize}
+	\item In MRC, weight on lobby's profits is $1+a$ no matter what. Doesn't vary in lobby's efforts. GH not really microfoundations for flexible model as in Long and Vousden (1991) / Baldwin (1987) model; microfoundations for more restrictive version with fixed weights; then decide $\tau$ to change PS, CS, etc. (p. 481 GH94). Can't get kinds of shocks as in this literature
+		\begin{itemize}
+			\item I still don't know exactly why you never want to reign in lobbying in GH; because it's just a conduit for information, and gov't is fully compensated for loss? But is it?
 		\end{itemize}
 	\item Bargaining power
 		\begin{itemize}
