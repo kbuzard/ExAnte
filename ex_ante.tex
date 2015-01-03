@@ -1,0 +1,277 @@
+\documentclass[12pt]{article}
+
+\addtolength{\textwidth}{1.4in}
+\addtolength{\oddsidemargin}{-.7in} %left margin
+\addtolength{\evensidemargin}{-.7in}
+\setlength{\textheight}{8.5in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\headheight}{0.0in}
+\setlength{\footskip}{.5in}
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parindent}{0pt}
+\linespread{1.1}
+
+\usepackage{amssymb, amsmath, amsthm, bm}
+\usepackage{graphicx,csquotes,verbatim}
+\usepackage[backend=biber,block=space,style=authoryear]{biblatex}
+\setlength{\bibitemsep}{\baselineskip}
+\usepackage[american]{babel}
+%dell laptop
+\addbibresource{C:/Users/Kristy/Dropbox/Research/xBibs/tradeagreements.bib}
+%\addbibresource{C:/Users/Kristy/Documents/Dropbox/Research/xBibs/tradeagreements.bib}
+\renewcommand{\newunitpunct}{,}
+\renewbibmacro{in:}{}
+
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\usepackage{xcolor}
+\hbadness=10000
+
+\newcommand{\ve}{\varepsilon}
+\newcommand{\ov}{\overline}
+\newcommand{\un}{\underline}
+\newcommand{\ta}{\theta}
+\newcommand{\al}{\alpha}
+\newcommand{\Ta}{\Theta}
+\newcommand{\expect}{\mathbb{E}}
+\newcommand{\Bt}{B(\bm{\tau^a})}
+\newcommand{\bta}{\bm{\tau^a}}
+\newcommand{\btn}{\bm{\tau^n}}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\de}{\delta}
+
+\begin{document}
+\begin{center}
+Ex-ante Lobbying
+\end{center}
+%\chead{Klimenko, Ramey and Watson (2007) summary.tex}
+
+\vskip.2in
+Ex-ante lobbying is lobbying before the trade agreement is signed to affect the level at which TA will be set (this also impacts what will be possible ex-post)
+\begin{itemize}
+	\item ex-post lobbying is lobbying after the TA is signed to change the applied tariff (to be clear, can also affect the incentives of the government in setting the TA)
+	\item lobby may have to pay both times, depending on whether the TA takes the form of an exact tariff commitment or a tariff cap
+		\begin{itemize}
+			\item As in Section [ ], when facing exact tariff commitment lobby's optimal ex-post effort choice is zero. However, when facing a tariff cap, protection will only be supplied if lobby exerts effort (i.e. according to $\tau^N(\ga(e)) = \frac{8\ga(e) - 5}{68 - 8 \ga(e)} = \tau^R_{W,e}$).
+			\item So ex-ante lobbying adds a second time at which the lobby may have an incentive to exert effort in the case of a tariff cap, a first time in the case of an exact commitment
+		\end{itemize}
+	\item For simplicity, adding ex-ante lobbying in case of endogenous lobbying ONLY
+\end{itemize}
+
+\vskip.5in
+BS2005 set up that this paper follows holds that governments set TA so that TA will be at optimal level ex-post: gov't will be able to set the applied tariff that matches the political pressure it experiences at the time, and it tunes the TA so that it's exactly the amount of pressure it wants
+\begin{itemize}
+	\item There is no possibility of ex-ante lobbying in BS2005 framework, so have to figure out what it means
+	\item What welfare does each party get at TA stage?
+		\begin{itemize}
+			\item For lobby is very clear: lobby just knows that this will bind its future action: so paying earlier only matters insofar as it improves ex-post profits
+			\item For govts: compare to BS2005, which is all forward looking. With ex-ante, government might get/lose political capital from different interested parties if lobbying is strong enough to outweigh future concerns; otherwise, it's all forward looking---what will future gains and losses be
+		\end{itemize}
+		
+\newpage
+	\item Thus the weight the gov't places on the lobbying industry's profits will change if ex-ante effort is high enough. The trade agreement tariff cap will be set according to $\ga(e^{EA})$ instead of at $\tau^R_{W,e}$ if that would lead to a higher trade agreement tariff (if $\tau = \frac{4(\ga(e^{EA}-1)}{25-4\ga(e^{EA}} < \tau^R_{W,e}$, then government prefers to set ex-post tariff)
+			\begin{itemize}
+				\item Recall how $\tau^{TA}$ is determined under ex-post lobbying only. Because the TA acts as a commitment device, the government chooses the tariff level $\tau^R_{W,e}$, and implicitly $e^{EP}=e^R_{W,e}$, to maximize the joint political welfare of the two governments as in Equation~\ref{exp:1}.
+		\begin{itemize}
+			\item Government DOESN'T have to just set trade agreement tariff given what it expects will happen in the future; it can influence lobby's future behavior through the trade agreement (at least on the high side; it can't encourage extra lobbying, which it would like to do in some cases, e.g. exact tariff commitment)
+			\item With ex-post lobbying only, at ex-ante stage gov't has to take into account how ex-post lobbying will affect it; picks $\tau^{TA}$ to max joint political welfare subject to this constraint (sets tariff to produce optimal $\ga$ according to $\tau^N$)
+		\end{itemize}
+				\item This is where gov't loses some measure of control with ex-ante lobbying: 
+					\begin{itemize}
+						\item If $e^{EA}$ is low enough, ex-ante lobbying has no impact. Government behaves as in ex-post case and chooses $\tau^R_{W,e}$.
+						\item If $e^{EA}$ is above some threshold, $\tau^{TA} >\tau^{TA^*}$ b/c $e^{EA}$ now determines $\tau^{TA}$
+						\item Gov't still chooses ``optimal'' TA, but it's constrained optimal. Constrained by current pressure.
+					\end{itemize}		
+				\end{itemize}
+	\item Real question: why does the government set non-zero $\tau^R_{W,e}$?
+		\begin{itemize}
+			\item Because joint welfare is higher when $e^R_{W,e}$ together with $\tau^R_{W,e}$ than it is when $e=0$ and $\tau=0$. These are fundamentally politically motivated governments.
+				\begin{itemize}
+					\item But depending on how welfare changes as pressure increases, gov't may be looking ahead and manipulating lobbying incentives as shown in Section~\ref{sec:objfcn}
+					\item When ex-ante lobbying is possible, in order to respond to that pressure, govts may have to raise $\tau^{TA}$ above $\tau^R_{W,e}$ (lobby won't ever complain if tariff cap is higher than what it asks for)
+					\item That is modeled here with a simple cut-off: if $e^{EA}$ is larger than anticipated $e^{EP}$, gov't responds to $e^{EA}$ instead of using TA to influence $e^{EP}$
+				\end{itemize}
+			\item We will see that this change to the government's preferences has the impacts one would expect, at least in the case of tariff caps: net profits for the lobby (weakly) increase, and net political utility for the government (weakly) decreases
+		\end{itemize}
+\end{itemize}
+
+\newpage
+Exact tariff commitment result
+\begin{itemize}
+	\item We know $e^{EP} =0$ and $\tau^{EP} = \tau^R_{S,e}$ when no possibility of ex-ante lobbying
+	\item What does lobby's problem look like?
+		\begin{itemize}
+			\item At ex-post stage, $e^{EA}$ sunk. So ex-post problem looks the same.
+			\item In principle, at ex-ante stage, $e^{EA}$ will have impact on $e^{EP}$. But not in exact tariff case: $e^{EP} = 0 \ \forall e^{EP}$.
+			\item So this collapses to a simple problem of maximizing joint gov't welfare with only $e=e^{EA}$
+				\begin{itemize}
+					\item Looks like a problem with no ex-post lobbying, but where there is perfect enforcement of the tariff commitment
+					\item Ex-post, gov't will have $\ga(0)$ but $\tau^A = \tau^R_{S,e}$. Gov't would prefer $\tau^A = 0$, so this is a welfare loss relative to no ex-ante case at this stage.
+						\begin{itemize}
+							\item Perhaps want note relating to MRC here?
+						\end{itemize}
+					\item Without knowing how gov't welfare varies in $e$ (and therefore $\ga$), we can't say for sure the effect at the ex-ante stage. As with example in Figure~\ref{fig:weight}, welfare could be reduced (certainly will for foreign), but could also be increased. Again, this is a kind of political welfare from negotiations, not an expected real welfare, so not clear how to weigh it against loss in ex-post stage that is a real loss.
+					\item Very clear gain for lobby. If there were no gain, it could just choose $e^{EA} = 0$
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+\vskip.5in
+Tariff cap result
+\begin{itemize}
+	\item Here, $e^{EP}$ will also work as in body of paper. The earlier stage is sunk, and applied level will match whatever effort lobby puts forth
+		\begin{itemize}
+			\item It's just that cap could be higher due to ex-ante lobbying
+				\begin{itemize}
+					\item Without ex-ante lobbying, government chooses $\tau^R_{W,e}$ that leads to ex-post $e$ that maximizes ex-ante joint welfare
+		\[
+		  W(\ga(e),\tau^R_{W,e}) + W^*(\tau^R_{W,e})
+		\]
+		knowing they'll set $\tau^N$ in the third stage (i.e. $\tau^N(\ga(e^R_{W,e})) = \frac{8\ga(e^R_{W,e}) - 5}{68 - 8 \ga(e^R_{W,e})} = \tau^R_{W,e}$).
+						\begin{itemize}
+							\item $\tau^R_{W,e}$ is the optimal unilateral choice of the home government when the lobby is faced with the constraint of the trade agreement
+							\item Lobby would max $\pi(\tau(\ga(e))) -e$; instead sets $e = e^R_{W,e} \Rightarrow \tau^N(\ga(e^R_{W,e})) =\tau^R_{W,e}$
+						\end{itemize}
+					\item Government actually ends up with a lower $e$ mapping into a lower $\ga$ to produce the trade agreement $\tau^R_{W,e}$ according to $\tau^N$, so has to set $\tau^R_{W,e}$ higher to target preferred $\ga$ according to joint max problem [in this symmetric case, identical to unilateral problem]
+			\end{itemize}
+		\end{itemize}
+	\item Lobby decides $e^{EA}$ given that gov't will set cap $\tau^R_{W,e}$ or in ex-ante stage given $e^{EA}$, whichever is higher
+		\begin{itemize}
+			\item Start with calculus condition
+				\[
+				  \pi(\tau^E(e^{EA})) - e^{EA} - e^{EP}(e^{EA})
+				\]
+				When this FOC is operative, government decides tariff cap according to joint decision problem with $e^{EA}$, but then lobby still has to exert effort up to that cap; $e^{EP}$ is the amount the lobby pays according to $\tau^N$ to achieve $\tau^E(e^{EA})$
+					\begin{itemize}
+						\item FOC
+							\begin{equation}
+							  \frac{\partial \pi}{\partial \tau} \frac{\partial \tau^E}{\partial \ga} \frac{\partial \ga}{\partial e^{EA}} = 1 +\frac{\partial e^{EP}}{\partial e^{EA}}
+								\label{eq:ea}
+							\end{equation}
+					\end{itemize}
+			\item Then, set to zero if
+			  \begin{equation}
+				  \pi(\tau^E(e^{EA})) - e^{EA} - e^{EP}(e^{EA}) < \pi(\tau^N(e^R_{W,e})) - e^R_{W,e} 
+					\label{ine:ea}
+				\end{equation}
+			\item Intuition: If lobby's incentives to exert pressure ex-ante are strong enough, they overpower the government's ability to use the TA to directly manipulate lobbying incentives ex-post
+				\begin{itemize}
+					\item Lobby can force government to set cap higher than the level that would optimize its welfare when there is no ex-ante lobbying
+					\item Result: With tariff cap, ex-ante lobbying can only (weakly) reduce gov't political welfare. It can only (weakly) increase net profits for lobby (lobby can set $e^{EA}=0$ if ex-ante lobbying would make it worse off)
+					\item i.e. tariff with ex-ante lobbying can only be (weakly) higher than without ex-ante lobbying
+				\end{itemize}	
+		\end{itemize}	
+\end{itemize}	
+				
+%\vskip.5in
+\newpage
+\begin{itemize}					
+	\item $\tau^{EA} < \tau^N(e^N)$
+		\begin{itemize}
+			\item Lemma to show ex-post lobbying leads to lower tariff than no agreement
+			\item Denote tariff with no agreement as $\tau^N(e^N)$. Then the trade agreement tariff with ex-ante lobbying, $\tau^{EA} \geq \tau^N(e^N)$. (this will be lemma) \\
+			Proof: The lobby's effort level in the absence of a trade agreement is determined by the first order condition
+				\begin{equation}
+						\frac{\partial \pi}{\partial \tau} \frac{\partial \tau^N}{\partial \ga} \frac{\partial \ga}{\partial e^N} = 1
+						\label{eq:nta}
+				\end{equation}
+			In order to compare this with Equation (\ref{eq:ea}), note that
+			  \[
+				  \frac{\partial e^{EP}}{\partial e^{EA}} = \frac{\partial e^{EP}}{\partial \tau^{EA}} \frac{\partial \tau^{EA}}{\partial e^{EA}} = \frac{1}{\frac{\partial \tau^N}{\partial e^{EP}}} \frac{\partial \tau^{E}}{\partial e^{EA}} =  \frac{\frac{\partial \tau^{E}}{\partial e^{EA}}}{\frac{\partial \tau^N}{\partial e^{EP}}} =  \frac{\frac{\partial \tau^{E}}{\partial \ga}\frac{\partial \ga}{\partial e}}{\frac{\partial \tau^N}{\partial \ga}\frac{\partial \ga}{\partial e}} =  \frac{\frac{\partial \tau^{E}}{\partial \ga}}{\frac{\partial \tau^N}{\partial \ga}} 
+				\]
+				where the first equality follows by the fact that the impact of a marginal unit of ex-ante lobbying effort on ex-post effort is to raise the trade agreement tariff. This is a tariff cap, and so we need to calculate the effect of this increased cap on ex-post effort. The second equality represents that this is just the inverse of the marginal impact of ex-post lobbying effort on the non-cooperative tariff; the super-script on the $\tau$ in the denominator has been changed to $N$ to denote that ex-post tariff setting is non-cooperative; that on the $\tau$ in the numerator has been change to $E$ to denote that trade agreement tariff setting is cooperative. The fourth equality unpacks the partial derivatives to show the intermediate impact of $\ga$. This leads to the final expression in which the common terms have been canceled. \\
+				Multiplying Equation (\ref{eq:ea}) by $\frac{\frac{\partial \tau^N}{\partial \ga}}{\frac{\partial \tau^E}{\partial \ga}}$
+				  \begin{equation}
+					  \frac{\partial \pi}{\partial \tau} \frac{\partial \tau^N}{\partial \ga} \frac{\partial \ga}{\partial e^{EA}} = \frac{\frac{\partial \tau^N}{\partial \ga}}{\frac{\partial \tau^E}{\partial \ga}} + 1
+						\label{eq:ea2}
+					\end{equation}
+				Because $\frac{\frac{\partial \tau^N}{\partial \ga}}{\frac{\partial \tau^E}{\partial \ga}} > 0$, the solution to the ex-ante first order condition as given in Equation~(\ref{eq:ea2}) is smaller than the solution to Equation~(\ref{eq:nta}), so that the lobby exerts less effort in the ex-ante stage of trade agreement negotiations than when there is no trade agreement. Since $\tau^E(\cdot) < \tau^N(\cdot)$ for all $e$, $\tau^{EA} < \tau^N(e^N)$. \\
+			(Important to give intuition since increased incentive to exert lobbying effort...)
+				\item If government would set $\tau^R_{W,e}$ such that lobby can achieve $e^L$ (that is, this level is optimal for lobby), then there is no incentive to lobby ex-ante
+		\begin{itemize}
+			\item If gov't sets $\tau^R_{W,e} < e^L$, lobby cannot get $e^L$ due to differing incentives ex-ante 
+						\begin{itemize}
+							\item Ex-post, pays according to $\tau^N$, ex-ante, pays according to $\tau^E$
+						\end{itemize}
+					\item Could be higher, but not all the way to level that would achieve $e^L$
+				\end{itemize}
+			\item Result: then tariffs are always lower with a trade agreement.
+			Proof: It is shown above that tariffs under ex-ante lobbying are set either in line with lobbying effort according to the first order condition (\ref{eq:ea}) or via ex-post incentives. 
+				\begin{itemize}
+					\item Assume throughout that $\frac{\partial \ga}{\partial e} > 0$
+				\end{itemize}
+			\item Even though ex-ante lobbying takes something away, as long as government \textit{wants} to restrain lobbying, trade agreement will do this even with ex-ante lobbying (relative to trade war level)
+				\begin{itemize}
+					\item If gov't wants more pressure, it should avoid TA. But then loses TOT internalization
+					\item If gov't wants less pressure, TA doubly good
+						\begin{itemize}
+							\item Presumes gov't is free to choose which sectors are part of TA, but this is part of a more complicated game; should be able to get payments to leave them out, then payments for unconstrained protection. But GATT rules...
+							\item Cross industry, it's possible that $\ga$ affects $W$ the same for all industries ($i$), but that the shape of $\ga$ differs by $i$
+							\item Remember what $\ga$ is: reduced form for how political pressure translates into weight put on profits in policy-making process
+							\item This would inform who gets included / left out of trade agreements
+						\end{itemize}
+					\end{itemize}
+		\end{itemize}
+	\item TA mutes lobbying incentives, even if there is ex-ante lobbying
+		\begin{itemize}
+			\item ex-ante lobbying is more expensive: both on the margin, and because you have to pay twice in order to get more protection than in ex-post only case
+			\item This will be too expensive for some, so they won't lobby ex-ante (see Condition~\ref{ine:ea})
+			\item This is part of what trade agreements do: relative to no agreement at all, raises price of protection. If only ex-post lobbying is rational, government gets control
+		\end{itemize}
+
+		
+	 \item It's possible that $e^{EP} < e^{L}$ with $e^{EA} > 0$
+		\begin{itemize}
+			\item For instance, take $W$ concave in $\ga$ (and $\ga^* < \ga^L$)
+			\item This implies $W$ increases as $\pi_x$ is weighted more heavily (as in standard $W$), but eventually $W$ decreases in $\ga$
+				\begin{itemize}
+					\item Giving them more weight doesn't give gov't proportionally higher welfare
+					\item Something like Bill Ethier's 2012 GJE (Political Economy Approach) paper where there are diminishing returns to lobbying as $\tau$ increases
+					\item I can interpret this as $\ga$ being a decreasing function of $\tau$
+					%\item diminishing returns to lobbying in $\tau$ for lobbyists vs. diminishing returns to awarding higher $\tau$ for gov't
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+
+
+		
+\newpage
+\vskip.2in
+Compare to ex-ante lobbying \`{a} la MRC.
+\begin{itemize}
+	\item Cooperative bargaining soln (maximize joint welfare of both governments and both lobbies) instead of extensive form
+		\begin{itemize}
+			\item leads to bizarre outcome where government will take into account lobby's profits even if $e^{\text{EA}}=0$.
+		\end{itemize}
+	\item In MRC main treatment, assume lobby has all the bargaining power
+		\begin{itemize}
+			\item Implies tariff caps and strong bindings equivalent, even though these split the surplus in very different ways. All surplus goes to lobby
+			\item In the part that is only in the NBER working paper, they have
+				\begin{itemize}
+					\item $z=0$ (perfectly immobile capital)
+					\item no ex-ante lobbying
+					\item government has all the bargaining power
+					\item government sometimes chooses free trade---so there IS an incentive to use the TA as a domestic commitment device
+				\end{itemize}
+			\end{itemize}
+	\item In MRC, no matter how tariff is set (cooperatively or non-cooperatively), contribution is $xp(\ov{t})$
+		\begin{itemize}
+			\item Not true in GH95
+			\item In my set-up, lobby's incentives change when tariff-setting process changes
+		\end{itemize}
+	\item In MRC, weight on lobby's profits is $1+a$ no matter what. Doesn't vary in lobby's efforts. GH not really microfoundations for flexible model as in Long and Vousden (1991) / Baldwin (1987) model; microfoundations for more restrictive version with fixed weights; then decide $\tau$ to change PS, CS, etc. (p. 481 GH94). Can't get shocks as in this literature
+		\begin{itemize}
+			\item I still don't know exactly why you never want to reign in lobbying in GH; because it's just a conduit for information, and gov't is fully compensated for loss? But is it?
+		\end{itemize}
+	\item Bargaining power
+		\begin{itemize}
+			\item It's important in MRC's story: they show how results change if they change bargaining power, and it's dramatic b/c they take an extreme view that lobbies have all the power
+			\item I view bargaining power in this environment as an artificial construct---what's going on isn't really bargaining; bargaining is used as a reduced form. But it's a much more complex process
+		\end{itemize}
+\end{itemize}
+
+		
+\end{document}
