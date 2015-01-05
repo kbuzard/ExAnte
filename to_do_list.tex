@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+
+\addtolength{\textwidth}{1.4in}
+\addtolength{\oddsidemargin}{-.7in} %left margin
+\addtolength{\evensidemargin}{-.7in}
+\setlength{\textheight}{8.5in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\headheight}{0.0in}
+\setlength{\footskip}{.5in}
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parindent}{0pt}
+\linespread{1.1}
+
+\usepackage{amssymb, amsmath, amsthm, bm}
+\usepackage{graphicx,csquotes,verbatim}
+\usepackage[backend=biber,block=space,style=authoryear]{biblatex}
+\setlength{\bibitemsep}{\baselineskip}
+\usepackage[american]{babel}
+%dell laptop
+\addbibresource{C:/Users/Kristy/Dropbox/Research/xBibs/tradeagreements.bib}
+%\addbibresource{C:/Users/Kristy/Documents/Dropbox/Research/xBibs/tradeagreements.bib}
+\renewcommand{\newunitpunct}{,}
+\renewbibmacro{in:}{}
+
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\usepackage{xcolor}
+\hbadness=10000
+
+\newcommand{\ve}{\varepsilon}
+\newcommand{\ov}{\overline}
+\newcommand{\un}{\underline}
+\newcommand{\ta}{\theta}
+\newcommand{\al}{\alpha}
+\newcommand{\Ta}{\Theta}
+\newcommand{\expect}{\mathbb{E}}
+\newcommand{\Bt}{B(\bm{\tau^a})}
+\newcommand{\bta}{\bm{\tau^a}}
+\newcommand{\btn}{\bm{\tau^n}}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\de}{\delta}
+
+\begin{document}
+\begin{center}
+Ex-ante Lobbying
+\end{center}
+%\chead{to_do_list.tex}
+
+\vskip.2in
+\begin{itemize}
+	\item Need to convey the possibilities of this set-up for capturing the real life dynamics of shocks integrated with lobbying dynamics, how that interacts with enforcement and administered protection
+	\item Supply air tight argument / reference about $C+aW$ being equivalent to $\ga$ increasing everywhere
+		\begin{itemize}
+			\item CAN'T! It's not true! Only microfound a version with $1+a$ on those who lobby, $a$ on those who don't
+		\end{itemize}
+	\item Replace $e_{W,e}$ with $e^R_{W,e}$
+	\item perhaps re-emphasize that gov't can't completely control lobbying: can't make it higher than lobby's optimal. But this is b/c there's only one lobby
+	\item finish escape clause result
+	\item Result 2: With ex-post lobbying only, it's possible to get no internalization of TOT externality when joint welfare is everywhere increasing in $\ga$. Can have trade agreement doing nothing.
+		\begin{itemize}
+			\item When TOT externality is internalized, welfare is higher at a \textit{given} $\ta$ because each country is not imposing the externality on the other
+				\begin{itemize}
+					\item But if $\ga$ is endogenous only, when they use the TA to maximize joint welfare, if joint welfare is everywhere increasing in $\ga$, they may not want to place a restriction on $\tau$ in relation to $\tau^N$
+					\item In general, they may still do something that looks like internalizing TOT externality, but not in the case where joint welfare is everywhere increasing in $\ga$ (which is equivalent to $W$ increasing in $\ga$ in the separable, symmetric economy)
+					\item In fact, the maximization problem looks exactly like unilateral maximization with a domestic commitment motive (reign in lobbying in second stage)
+				\end{itemize}
+		\end{itemize}
+	\item pg. 24 calculations
+		\begin{itemize}
+			\item Decide where political objective fcn. section goes now
+		\end{itemize}
+	\item re-write intro
+		\begin{itemize}
+			\item MRC-style results survive incorporation of ex-ante lobbying. TA still works to restrict lobbying in many cases, but also to keep lobbyists ``in the game''
+			\item Baldwin-style gov't welfare function works for a set of questions, but not for this one
+				\begin{itemize}
+					\item Need to be able to say which predictions/design questions are okay: those that don't change lobbying incentives
+				\end{itemize}
+			\item Coates and Ludema (2001)---endogenous (add to list of GH, MRC)
+			\item How do I want to sell the paper? In relation to what literature? (what lit does endogenous? what lit doesn't?)
+			\item What if the WTO actually \textit{did} what the literature says it does? It wouldn't work
+			\item Be more explicit about relationship between $\ga(e)$ and $\ga(s)$
+		\end{itemize}
+\end{itemize}
+
+\vskip.5in
+For after this draft
+\begin{itemize}
+	\item Could escape clause be made to work with some kind of dynamic use constraint?
+		\begin{itemize}
+			\item When would lobby exert effort to top up?
+		\end{itemize}
+	\item What units are $\pi(\tau)$ and $e$ measured in? (no numeraire)
+	\item existence proofs
+\end{itemize}
+
+\end{document}
