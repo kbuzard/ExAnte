@@ -130,3 +130,61 @@ plot(t,W);
 W2 = CSx + gtn2.*PSx + CSy + PSy + TR;
 plot(t,W2);
 
+
+% Create figure for weighted function
+figure1 = figure('Color',[1 1 1]);
+
+% Create axes
+axes1 = axes('Parent',figure1);
+
+%% set X-limits of the axes
+xlim(axes1,[0 1/6]);
+%% set Y-limits of the axes
+ylim(axes1,[0.0854 0.087]);
+box(axes1,'on');
+hold(axes1,'all');
+
+% Create multiple lines using matrix input to plot
+plot1 = plot(t,[W],'Parent',axes1,'LineWidth',1);
+set(plot1(1),'DisplayName','Trade Agreement Tariffs',...
+    'Color',[0 0 0]);
+
+% Create title
+%title('Government Welfare with Weighted Objective Function',...
+    'FontWeight','demi',...
+    'FontSize',12);
+
+% Create xlabel
+xlabel('\tau','FontSize',12);
+
+% Create ylabel
+ylabel('Government Welfare','FontSize',12);
+
+% Create figure for unweighted function
+figure1 = figure('Color',[1 1 1]);
+
+% Create axes
+axes1 = axes('Parent',figure1);
+
+%% set X-limits of the axes
+xlim(axes1,[0 1/6]);
+%% set Y-limits of the axes
+ylim(axes1,[0.42 0.5]);
+box(axes1,'on');
+hold(axes1,'all');
+
+% Create multiple lines using matrix input to plot
+plot1 = plot(t,[W2],'Parent',axes1,'LineWidth',1);
+set(plot1(1),'DisplayName','Trade Agreement Tariffs',...
+    'Color',[0 0 0]);
+
+% Create title
+%title('Government Welfare with Weighted Objective Function',...
+    'FontWeight','demi',...
+    'FontSize',12);
+
+% Create xlabel
+xlabel('\tau','FontSize',12);
+
+% Create ylabel
+ylabel('Government Welfare','FontSize',12);
