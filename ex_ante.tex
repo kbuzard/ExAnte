@@ -1,66 +1,53 @@
-\documentclass[12pt]{article}
+%\documentclass[12pt]{article}
 
-\addtolength{\textwidth}{1.4in}
-\addtolength{\oddsidemargin}{-.7in} %left margin
-\addtolength{\evensidemargin}{-.7in}
-\setlength{\textheight}{8.5in}
-\setlength{\topmargin}{0.0in}
-\setlength{\headsep}{0.0in}
-\setlength{\headheight}{0.0in}
-\setlength{\footskip}{.5in}
-\renewcommand{\baselinestretch}{1.0}
-\setlength{\parindent}{0pt}
-\linespread{1.1}
+%\addtolength{\textwidth}{1.4in}
+%\addtolength{\oddsidemargin}{-.7in} %left margin
+%\addtolength{\evensidemargin}{-.7in}
+%\setlength{\textheight}{8.5in}
+%\setlength{\topmargin}{0.0in}
+%\setlength{\headsep}{0.0in}
+%\setlength{\headheight}{0.0in}
+%\setlength{\footskip}{.5in}
+%\renewcommand{\baselinestretch}{1.0}
+%\setlength{\parindent}{0pt}
+%\linespread{1.1}
 
-\usepackage{amssymb, amsmath, amsthm, bm}
-\usepackage{graphicx,csquotes,verbatim}
-\usepackage[backend=biber,block=space,style=authoryear]{biblatex}
-\setlength{\bibitemsep}{\baselineskip}
-\usepackage[american]{babel}
+%\usepackage{amssymb, amsmath, amsthm, bm}
+%\usepackage{graphicx,csquotes,verbatim}
+%\usepackage[backend=biber,block=space,style=authoryear]{biblatex}
+%\setlength{\bibitemsep}{\baselineskip}
+%\usepackage[american]{babel}
 %dell laptop
-\addbibresource{C:/Users/Kristy/Dropbox/Research/xBibs/tradeagreements.bib}
+%\addbibresource{C:/Users/Kristy/Dropbox/Research/xBibs/tradeagreements.bib}
 %\addbibresource{C:/Users/Kristy/Documents/Dropbox/Research/xBibs/tradeagreements.bib}
-\renewcommand{\newunitpunct}{,}
-\renewbibmacro{in:}{}
+%\renewcommand{\newunitpunct}{,}
+%\renewbibmacro{in:}{}
 
 
-\DeclareMathOperator*{\argmax}{arg\,max}
-\usepackage{xcolor}
-\hbadness=10000
+%\DeclareMathOperator*{\argmax}{arg\,max}
+%\usepackage{xcolor}
+%\hbadness=10000
 
-\newcommand{\ve}{\varepsilon}
-\newcommand{\ov}{\overline}
-\newcommand{\un}{\underline}
-\newcommand{\ta}{\theta}
-\newcommand{\al}{\alpha}
-\newcommand{\Ta}{\Theta}
-\newcommand{\expect}{\mathbb{E}}
-\newcommand{\Bt}{B(\bm{\tau^a})}
-\newcommand{\bta}{\bm{\tau^a}}
-\newcommand{\btn}{\bm{\tau^n}}
-\newcommand{\ga}{\gamma}
-\newcommand{\Ga}{\Gamma}
-\newcommand{\de}{\delta}
+%\newcommand{\ve}{\varepsilon}
+%\newcommand{\ov}{\overline}
+%\newcommand{\un}{\underline}
+%\newcommand{\al}{\alpha}
+%\newcommand{\expect}{\mathbb{E}}
+%\newcommand{\ga}{\gamma}
+%\newcommand{\Ga}{\Gamma}
+%\newcommand{\de}{\delta}
 
-\begin{document}
-\begin{center}
-Ex-ante Lobbying
-\end{center}
-%\chead{Klimenko, Ramey and Watson (2007) summary.tex}
+%\begin{document}
 
-\vskip.2in
-Ex-ante lobbying is lobbying before the trade agreement is signed to affect the level at which TA will be set (this also impacts what will be possible ex-post)
-\begin{itemize}
-	\item ex-post lobbying is lobbying after the TA is signed to change the applied tariff (to be clear, can also affect the incentives of the government in setting the TA)
-	\item lobby may have to pay both times, depending on whether the TA takes the form of an exact tariff commitment or a tariff cap
-		\begin{itemize}
-			\item As in Section [ ], when facing exact tariff commitment lobby's optimal ex-post effort choice is zero. However, when facing a tariff cap, protection will only be supplied if lobby exerts effort (i.e. according to $\tau^N(\ga(e)) = \frac{8\ga(e) - 5}{68 - 8 \ga(e)} = \tau^R_{W,e}$).
-			\item So ex-ante lobbying adds a second time at which the lobby may have an incentive to exert effort in the case of a tariff cap, a first time in the case of an exact commitment
-		\end{itemize}
-	\item For simplicity, adding ex-ante lobbying in case of endogenous lobbying ONLY
-\end{itemize}
+In many situations, it is realistic to assume that, in addition to the ex-post lobbying examined throughout this text, lobbying also takes place before the trade agreement is signed to affect the terms of the trade agreement. To reiterate what has been shown in previous sections, although ex-post lobbying occurs after the trade agreement is signed in order to impact the level of the applied tariff, it alters the incentives of governments when they negotiate the trade agreement. Similarly, ex-ante lobbying is aimed directly at changing the level of the trade agreement tariff, but here lobbies only engage in this activity in order to alter what will be possible ex-post.
+
+With the addition of the possibility of ex-ante lobbying, the lobby may have to pay twice. As in Section~\ref{sec:strong}, when facing a trade agreement in which commitments take the form of strong bindings, the lobby's optimal ex-post effort choice is zero. However, when facing a tariff cap, protection will only be supplied at the ex-post stage if the lobby exerts effort. Thus, ex-ante lobbying adds a second time at which the lobby may have an incentive to exert effort in the case of a tariff cap; it introduces a first time at which the lobby may supply non-zero effort in the case of a strong binding.
+
+
 
 \vskip.5in
+For simplicity, adding ex-ante lobbying in case of endogenous lobbying ONLY
+
 BS2005 set up that this paper follows holds that governments set TA so that TA will be at optimal level ex-post: gov't will be able to set the applied tariff that matches the political pressure it experiences at the time, and it tunes the TA so that it's exactly the amount of pressure it wants
 \begin{itemize}
 	\item There is no possibility of ex-ante lobbying in BS2005 framework, so have to figure out what it means
@@ -274,4 +261,4 @@ Compare to ex-ante lobbying \`{a} la MRC.
 \end{itemize}
 
 		
-\end{document}
+%\end{document}
