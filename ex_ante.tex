@@ -49,36 +49,19 @@ For simplicity, here I consider ex-ante lobbying when political pressure is endo
 
 In the case of lobbies, a lobby knows that the trade agreement will bind its future action, so exerting effort at the ex-ante stage only matters insofar as it improves ex-post profits net of both ex-ante and ex-post lobbying effort. For the governments, with ex-post pressure only, the governments are completely forward looking: they set the trade agreement with a view toward maximizing expected joint ex-post welfare. In order for ex-ante lobbying to have an effect, it must be that governments also receive some utility from the setting of the trade agreement itself: perhaps they receive or lose political capital from various interested parties, and can be persuaded to forego future benefits if ex-ante lobbying is strong enough to outweigh those future concerns. 
 
-Thus I model the governments ex-ante preferences as ... threshold
+Thus I model the influence of ex-ante lobbying on the governments' tariff-setting behavior as operating through a threshold. Recall how the trade agreement tariff is determined under ex-post lobbying only. Because the trade agreement acts as a commitment device, the governments choose the tariff level $\tau^R_{W,e}$, and implicitly $e^{EP}=e^R_{W,e}$, to maximize their joint political welfare as in Equation~\ref{exp:1}, subject only to the constraint that $\ga$ will be realized according to the ex-post lobbying process.
 		
+As discussed in Section~\ref{sec:objfcn}, depending on how government welfare changes as political pressure increases, the governments may be looking ahead and manipulating ex-post lobbying incentives when there is only ex-post lobbying. When ex-ante lobbying is possible the governments may have to raise the trade agreement tariff above $\tau^R_{W,e}$ in order to respond to that pressure.
 
-	\item Thus the weight the gov't places on the lobbying industry's profits will change if ex-ante effort is high enough. The trade agreement tariff cap will be set according to $\ga(e^{EA})$ instead of at $\tau^R_{W,e}$ if that would lead to a higher trade agreement tariff (if $\tau = \frac{4(\ga(e^{EA}-1)}{25-4\ga(e^{EA}} < \tau^R_{W,e}$, then government prefers to set ex-post tariff)
-			\begin{itemize}
-				\item Recall how $\tau^{TA}$ is determined under ex-post lobbying only. Because the trade agreement acts as a commitment device, the government chooses the tariff level $\tau^R_{W,e}$, and implicitly $e^{EP}=e^R_{W,e}$, to maximize the joint political welfare of the two governments as in Equation~\ref{exp:1}.
-		\begin{itemize}
-			\item Government DOESN'T have to just set trade agreement tariff given what it expects will happen in the future; it can influence lobby's future behavior through the trade agreement (at least on the high side; it can't encourage extra lobbying, which it would like to do in some cases, e.g. exact tariff commitment)
-			\item With ex-post lobbying only, at ex-ante stage gov't has to take into account how ex-post lobbying will affect it; picks $\tau^{TA}$ to max joint political welfare subject to this constraint (sets tariff to produce optimal $\ga$ according to $\tau^N$)
-		\end{itemize}
-				\item This is where gov't loses some measure of control with ex-ante lobbying: 
-					\begin{itemize}
-						\item If $e^{EA}$ is low enough, ex-ante lobbying has no impact. Government behaves as in ex-post case and chooses $\tau^R_{W,e}$.
-						\item If $e^{EA}$ is above some threshold, $\tau^{TA} >\tau^{TA^*}$ b/c $e^{EA}$ now determines $\tau^{TA}$
-						\item Gov't still chooses ``optimal'' trade agreement, but it's constrained optimal. Constrained by current pressure.
-					\end{itemize}		
-				\end{itemize}
-	\item Real question: why does the government set non-zero $\tau^R_{W,e}$?
-		\begin{itemize}
-			\item Because joint welfare is higher when $e^R_{W,e}$ together with $\tau^R_{W,e}$ than it is when $e=0$ and $\tau=0$. These are fundamentally politically motivated governments.
-				\begin{itemize}
-					\item But depending on how welfare changes as pressure increases, gov't may be looking ahead and manipulating lobbying incentives as shown in Section~\ref{sec:objfcn}
-					\item When ex-ante lobbying is possible, in order to respond to that pressure, govts may have to raise $\tau^{TA}$ above $\tau^R_{W,e}$ (lobby won't ever complain if tariff cap is higher than what it asks for)
-					\item That is modeled here with a simple cut-off: if $e^{EA}$ is larger than anticipated $e^{EP}$, gov't responds to $e^{EA}$ instead of using trade agreementto influence $e^{EP}$
-				\end{itemize}
-			\item We will see that this change to the government's preferences has the impacts one would expect, at least in the case of tariff caps: net profits for the lobby (weakly) increase, and net political utility for the government (weakly) decreases
-		\end{itemize}
-\end{itemize}
+This is modeled here with a simple cut-off. The trade agreement tariff cap will be set according to $\ga\left(e^{EA}\right)$ instead of at $\tau^R_{W,e}$ if $\ga\left(e^{EA}\right)$ would lead to a higher trade agreement tariff. If, on the other hand, $\tau = \frac{4(\ga(e^{EA})-1)}{25-4\ga(e^{EA})} < \tau^R_{W,e}$, the governments respond to the higher ex-post pressure and set $\tau^R_{W,e}$.
 
-\newpage
+Thus the governments lose some measure of control with ex-ante lobbying. If $e^{EA}$ is low enough, ex-ante lobbying has no impact. But if $e^{EA}$ is above the threshold, the trade agreement tariff is strictly greater than $\tau^R_{W,e}$ and so joint government welfare will not be at its globally optimal level. The trade agreement the governments choose will be constrained by the ex-ante pressure.
+
+We will see that this change to the government's preferences has the impacts one would expect, at least in the case of tariff caps: net profits for the lobby (weakly) increase, and net political utility for the governments (weakly) decrease.
+
+
+
+
 Exact tariff commitment result
 \begin{itemize}
 	\item We know $e^{EP} =0$ and $\tau^{EP} = \tau^R_{S,e}$ when no possibility of ex-ante lobbying
