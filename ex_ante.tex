@@ -99,42 +99,27 @@ Thus if the lobby's incentives to exert pressure ex-ante are strong enough, they
 To understand the function trade agreements serve in the presence of ex-ante lobbying when lobbying is endogenous, it is helpful to establish some facts about the levels at which tariff are set under various scenarios.
 
 \begin{lemma}
-  Trade agreements with ex-post lobbying lead to lower tariffs (when bindings are either strong or weak) than those that are applied in the absence of an agreement.
+  Trade agreements with ex-post lobbying lead to weakly lower tariffs (when bindings are either strong or weak) than those that are applied in the absence of an agreement.
 	\label{lem:1}
 \end{lemma}
 
-See the \hyperlink{lem1}{Appendix} for the proof.
+See the \hyperlink{lem1}{Appendix} for the proof. Intuitively, both the terms-of-trade and domestic-commitment motives drive the governments to chose a (weakly) lower tariff than that which the home government chooses when there is no agreement.
 
-\begin{itemize}					
-	\item $\tau^{EA} < \tau^N(e^N)$
+It has been established above that the presence of ex-ante lobbying can only weakly increase tariffs from the ex-post agreement level with both strong and weak bindings. Lemma~\ref{lem:1} only establishes that the tariffs with ex-post lobbying are lower than the tariffs with no agreement; we would like to be able to derive a clear result comparing the tariff level with ex-ante lobbying to that with no agreement as well. Lemma~\ref{lem:2} does just that.
+
+\begin{lemma}
+  When bindings are weak, trade agreements with ex-ante lobbying lead to strictly lower tariffs than those that are applied in the absence of an agreement. When bindings are strong, tariffs with ex-ante lobbying may be either higher or lower than those that are applied in the absence of an agreement.
+	\label{lem:2}
+\end{lemma}
+
+See the \hyperlink{lem1}{Appendix} for the proof. The key insight here is that $\frac{\partial \ga}{\partial e}$ is higher ex-ante for any given $e$ than it is ex-post. With stronger incentives on the margin ex-ante, we must rule out that the lobby exerts sufficiently more effort to overcome the internalization of the terms of trade externality that occurs through the trade agreement negotiation. The fact that the lobby must pay a second time is sufficient to mute its incentives at the ex-ante stage in the case of weak bindings; because it pays nothing at the ex-post stage with strong bindings, it is possible (although unlikely) that the heightened incentives on the margin could lead to sufficient effort to produce a higher trade agreement tariff than that which the lobby would achieve with unilateral tariff setting. 
+
+	
 		\begin{itemize}
-			\item Denote tariff with no agreement as $\tau^N(e^N)$. Then the trade agreement tariff with ex-ante lobbying, $\tau^{EA} < \tau^N(e^N)$. (this will be lemma) \\
-			Proof: The lobby's effort level in the absence of a trade agreement is determined by the first order condition
-				\begin{equation}
-						\frac{\partial \pi}{\partial \tau} \frac{\partial \tau^N}{\partial \ga} \frac{\partial \ga}{\partial e^N} = 1
-						\label{eq:nta}
-				\end{equation}
-			In order to compare this with Equation (\ref{eq:ea}), note that
-			  \[
-				  \frac{\partial e^{EP}}{\partial e^{EA}} = \frac{\partial e^{EP}}{\partial \tau^{EA}} \frac{\partial \tau^{EA}}{\partial e^{EA}} = \frac{1}{\frac{\partial \tau^N}{\partial e^{EP}}} \frac{\partial \tau^{E}}{\partial e^{EA}} =  \frac{\frac{\partial \tau^{E}}{\partial e^{EA}}}{\frac{\partial \tau^N}{\partial e^{EP}}} =  \frac{\frac{\partial \tau^{E}}{\partial \ga}\frac{\partial \ga}{\partial e}}{\frac{\partial \tau^N}{\partial \ga}\frac{\partial \ga}{\partial e}} =  \frac{\frac{\partial \tau^{E}}{\partial \ga}}{\frac{\partial \tau^N}{\partial \ga}} 
-				\]
-				where the first equality follows by the fact that the impact of a marginal unit of ex-ante lobbying effort on ex-post effort is to raise the trade agreement tariff. This is a tariff cap, and so we need to calculate the effect of this increased cap on ex-post effort. The second equality represents that this is just the inverse of the marginal impact of ex-post lobbying effort on the non-cooperative tariff; the super-script on the $\tau$ in the denominator has been changed to $N$ to denote that ex-post tariff setting is non-cooperative; that on the $\tau$ in the numerator has been change to $E$ to denote that trade agreement tariff setting is cooperative. The fourth equality unpacks the partial derivatives to show the intermediate impact of $\ga$. This leads to the final expression in which the common terms have been canceled. \\
-				Multiplying Equation (\ref{eq:ea}) by $\frac{\frac{\partial \tau^N}{\partial \ga}}{\frac{\partial \tau^E}{\partial \ga}}$
-				  \begin{equation}
-					  \frac{\partial \pi}{\partial \tau} \frac{\partial \tau^N}{\partial \ga} \frac{\partial \ga}{\partial e^{EA}} = \frac{\frac{\partial \tau^N}{\partial \ga}}{\frac{\partial \tau^E}{\partial \ga}} + 1
-						\label{eq:ea2}
-					\end{equation}
-				Because $\frac{\frac{\partial \tau^N}{\partial \ga}}{\frac{\partial \tau^E}{\partial \ga}} > 0$, the solution to the ex-ante first order condition as given in Equation~(\ref{eq:ea2}) is smaller than the solution to Equation~(\ref{eq:nta}), so that the lobby exerts less effort in the ex-ante stage of trade agreement negotiations than when there is no trade agreement. Since $\tau^E(\cdot) < \tau^N(\cdot)$ for all $e$, $\tau^{EA} < \tau^N(e^N)$. \\
-			(Important to give intuition since increased incentive to exert lobbying effort...)
-				\item If government would set $\tau^R_{W,e}$ such that lobby can achieve $e^L$ (that is, this level is optimal for lobby), then there is no incentive to lobby ex-ante
-		\begin{itemize}
-			\item If gov't sets $\tau^R_{W,e} < e^L$, lobby cannot get $e^L$ due to differing incentives ex-ante 
-						\begin{itemize}
-							\item Ex-post, pays according to $\tau^N$, ex-ante, pays according to $\tau^E$
-						\end{itemize}
-					\item Could be higher, but not all the way to level that would achieve $e^L$
-				\end{itemize}
-			\item Result: then tariffs are always lower with a trade agreement.
+			
+			
+			
+		\item Result: then tariffs are always lower with a trade agreement.
 			Proof: It is shown above that tariffs under ex-ante lobbying are set either in line with lobbying effort according to the first order condition (\ref{eq:ea}) or via ex-post incentives. 
 				\begin{itemize}
 					\item Assume throughout that $\frac{\partial \ga}{\partial e} > 0$
@@ -151,6 +136,8 @@ See the \hyperlink{lem1}{Appendix} for the proof.
 						\end{itemize}
 					\end{itemize}
 		\end{itemize}
+		
+\begin{itemize}					
 	\item trade agreement mutes lobbying incentives, even if there is ex-ante lobbying
 		\begin{itemize}
 			\item ex-ante lobbying is more expensive: both on the margin, and because you have to pay twice in order to get more protection than in ex-post only case
