@@ -260,6 +260,7 @@ Then when setting the trade agreement tariffs to maximize its political welfare,
 
 \begin{result}
   When political pressure is entirely endogenous, under the equilibrium trade agreement with strong bindings the lobbies exert no effort and are afforded no protection if governments have no inherent bias toward protection. 
+	\label{res:strong}
 \end{result}
 
 This very strong form of commitment for governments removes the lobby's commitment to pay for the protection it desires. Unless one assumes that the government is inherently biased toward the import-competing industry---that is, would provide protection in the absence of any political pressure being exerted---this case results in an outcome that is equivalent to the outcome under a social welfare maximizing government. This contrasts starkly with the prediction when political pressure is assumed to be completely exogenously determined.
@@ -545,7 +546,17 @@ Examining the expression in brackets:
 				
 				Because $\tau$ is an increasing function of $\ga$, this pattern holds for $\ga$ as well. $\frac{1}{\left(4+\ga(e)\right)^2}$ is positive (and decreasing as a function of $\ga$), so the pattern holds for the derivative as a whole. Thus the FOC delivers a minimum point and the maximum must be at one of the endpoints. Calculations show that $W(\ga=1.75) > W(\ga=1)$. $\hfill\blacksquare$
 
-
+\vskip.2in
+\noindent \textbf{\hypertarget{lem1}{Proof of Lemma~\ref{lem:1}}}: \\
+In the case of strong bindings, this is immediate from Result~\ref{res:strong}. In the case of weak bindings, first examine the first order condition for unilateral tariff setting:
+\[
+  \frac{\partial W_X(\ga,\tau)}{\partial \tau} = - \frac{5}{49} - \frac{68}{49}\tau +\frac{1}{98}\ga\left[ 16 + 16\tau \right] = 0
+\]
+Substituting in the inverse of the solution function $\tau^N(\ga) = \frac{8\ga-5}{68-8\ga}$ for $\ga$, this is
+\[
+  \frac{\partial W_X(\ga,\tau)}{\partial \tau} = - \frac{5}{49} - \frac{68}{49}\tau +\frac{1}{98} \frac{68\tau+5}{8+8\tau} \left[ 16 + 16\tau \right] = 0
+\]
+This same solution for $\ga$ will be substituted into the first order condition for the joint maximization problem in the ex-post trade agreement game; the only difference is the foreign welfare $W_X^*(\tau) = \frac{25}{98} - \frac{3}{49}\tau + \frac{9}{49}(\tau)^2$ is added to the objective function. The derivative with respect to $\tau$, $- \frac{3}{49} + \frac{18}{49}\tau$ is strictly negative for all non-prohibitive levels of the tariff ($\tau \in \left[0,1/6\right)$) and 0 at the prohibitive tariff. Thus the first order condition for the joint problem is negative at the unilateral tariff; a (weakly) lower tariff must be chosen to achieve the maximal value of this objective function. $\hfill\blacksquare$
 
 
 
